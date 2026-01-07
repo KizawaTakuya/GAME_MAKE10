@@ -116,7 +116,7 @@ function GameScreen({ setScreen }) {
 
   return (
     <div style={{ padding: "16px", position: "relative" }}>
-      {/* ゲーム情報表示 */}
+      {/* プレイ画面 */}
       <div className="game-area">
         <p className="game-title">「10」を作ろう！</p>
         <p>SCORE: {score}</p>
@@ -181,7 +181,7 @@ function GameScreen({ setScreen }) {
         ))}
       </div>
 
-      {/* +-5オーバーレイ */}
+      {/* +-5正負選択 */}
       {selectingCard && (
         <div className="overlay-box">
           <p>+-5 をどう使う？</p>
@@ -192,13 +192,13 @@ function GameScreen({ setScreen }) {
         </div>
       )}
 
-      {/* リセット / トップ */}
+      {/* リセット と トップ */}
       <div style={{ marginTop: "16px", display: "flex", gap: "12px" }}>
         <button onClick={restartGame}>RESET</button>
         <button onClick={() => setScreen("start")}>TOPに戻る</button>
       </div>
 
-      {/* ゲームクリアオーバーレイ */}
+      {/* ゲームクリア */}
       {clearOverlay && (
         <ClearResult
           score={finalScore}

@@ -1,7 +1,7 @@
 import React from "react";
 
 function StartScreen({ setScreen }) {
-  // localStorage から最高スコア取得（未プレイ時は 0）
+  // 最高スコアの取得
   const bestScore = Number(localStorage.getItem("bestScore")) || 0;
 
   return (

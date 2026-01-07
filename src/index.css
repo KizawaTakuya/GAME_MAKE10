@@ -1,4 +1,4 @@
-/* ===== 全体 ===== */
+/* 全体 */
 body {
   margin: 0;
   min-height: 100vh;
@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-/* ===== 共通スクリーンレイアウト ===== */
+/* 共通 */
 .screen {
   min-height: 100vh;
   width: 100%;
@@ -24,7 +24,7 @@ body {
   color: inherit;
 }
 
-/* ===== スタート画面 ===== */
+/* スタート画面 */
 .start-screen {
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ body {
   color: white;
 }
 
-/* ボタン配置 */
+/* ボタン */
 .start-buttons {
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ body {
   align-items: center;
 }
 
-/* ===== ボタン共通 ===== */
+/* ボタン共通 */
 button {
   font-size: 1.2rem;
   padding: 14px 32px;
@@ -75,7 +75,7 @@ button:active {
   transform: scale(0.97);
 }
 
-/* ===== ルール画面 ===== */
+/* ルール画面 */
 .rule-text {
   max-width: 650px;
   margin: 0 auto;
@@ -90,7 +90,7 @@ button:active {
   text-indent: -1.2em;
 }
 
-/* ===== プレイ画面 ===== */
+/* プレイ画面 */
 .game-area {
   max-width: 600px;
   line-height: 1.8;
@@ -131,7 +131,7 @@ button:active {
   color: black;
 }
 
-/* ===== オーバーレイ ===== */
+/* オーバーレイ */
 .overlay-box {
   position: absolute;
   top: 20%;
