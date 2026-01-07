@@ -1,0 +1,146 @@
+/* ===== 全体 ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  background: #1e223a;
+  color: white;
+}
+
+/* ===== 共通スクリーンレイアウト ===== */
+.screen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+/* ===== スタート画面 ===== */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* タイトル */
+.start-screen h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: white;
+}
+
+/* 最高スコア */
+.best-score {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  margin-left: 25px;
+  color: white;
+}
+
+/* ボタン配置 */
+.start-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ===== ボタン共通 ===== */
+button {
+  font-size: 1.2rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #6366f1;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ===== ルール画面 ===== */
+.rule-text {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 140px;
+  color: white;
+}
+
+.rule-text p {
+  margin: 0.6em 0;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+/* ===== プレイ画面 ===== */
+.game-area {
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 1.4rem;
+  text-align: left;
+  margin: 0 auto;
+  color: white;
+}
+
+.game-area p {
+  margin: 0.8em 0;
+  font-weight: 500;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ステータスメッセージ */
+.status-message {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.status-success {
+  color: #00ff7f;
+}
+
+.status-fail {
+  color: #ff4c4c;
+}
+
+.card-number {
+  color: black;
+}
+
+/* ===== オーバーレイ ===== */
+.overlay-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  z-index: 100;
+  text-align: center;
+  color: black;
+}
