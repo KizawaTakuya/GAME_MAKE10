@@ -167,7 +167,7 @@ function GameScreen({ setScreen }) {
       </div>
 
       {/* 手札 */}
-      <h3>手札</h3>
+      <h3>手札(DRAG&DROP)</h3>
       <div style={{ display: "flex", gap: "8px" }}>
         {hand.map((card) => (
           <Card
