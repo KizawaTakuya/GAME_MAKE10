@@ -183,7 +183,7 @@ function GameScreen({ setScreen }) {
 
       {/* +-5正負選択 */}
       {selectingCard && (
-        <div className="overlay-box">
+        <div className="plus-minus-box">
           <p>+-5 をどう使う？</p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center" }}>
             <button onClick={() => decidePlusMinus(5)}>+5</button>
@@ -200,11 +200,13 @@ function GameScreen({ setScreen }) {
 
       {/* ゲームクリア */}
       {clearOverlay && (
-        <ClearResult
-          score={finalScore}
-          onRestart={restartGame}
-          setScreen={setScreen}
-        />
+        <div className="clear-overlay">
+          <ClearResult
+            score={finalScore}
+            onRestart={restartGame}
+            setScreen={setScreen}
+          />
+        </div>
       )}
     </div>
   );
